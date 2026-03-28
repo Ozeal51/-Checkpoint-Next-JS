@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This repository contains a small portfolio website built with Next.js (Pages Router).
 
-## Getting Started
+**What this project includes:**
+- **Pages router** based pages in the `pages/` directory: `index`, `about`, `projects`, `contact`, `address`, and `email`.
+- Reusable React components in `components/` (`Navbar`, `Footer`, `Layout`, `ProjectCard`, `ProfileHeader`).
+- Styling via **CSS Modules** in `styles/` and one example of `styled-components` (SSR-safe setup).
+- Images and SVGs under `public/images/` used with Next.js `Image` component.
+- A server-side rendered `projects` page using `getServerSideProps` (see `pages/projects.tsx`).
 
-First, run the development server:
+**Files of note**
+- `pages/_app.tsx` — Next.js app wrapper, loads global CSS.
+- `pages/_document.tsx` — SSR setup for `styled-components` (important for server rendering of styled-components).
+- `pages/projects.tsx` — Implements `getServerSideProps` to demonstrate SSR per-request rendering.
+- `components/ProfileHeader.tsx` — Uses `next/image` and a `styled-components` call for the primary CTA.
+- `public/images/*` — Profile and project preview images used by the portfolio.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+**Local development**
+1. Install dependencies:
+
+```powershell
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Run the development server:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```powershell
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Open http://localhost:3000 in your browser.
 
-## Learn More
+**Build and production preview**
 
-To learn more about Next.js, take a look at the following resources:
+```powershell
+npm run build
+npm run start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Deploy to Vercel**
+- Connect your Git repository to Vercel (https://vercel.com/new).
+- Vercel auto-detects Next.js projects — the default build command `npm run build` and output directory are correct.
+- Ensure `NODE_ENV` is `production` (Vercel sets this automatically).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Notes & Implementation Details**
+- The project intentionally uses the Pages Router (file-based routing under `pages/`) to provide simple, predictable routes.
+- `pages/projects.tsx` uses `getServerSideProps` to render the page on the server and inject a `generatedAt` timestamp on every request — this demonstrates server-side rendering.
+- `styled-components` is configured for SSR in `pages/_document.tsx` using `ServerStyleSheet`.
+- Images live in `public/images/` and are referenced via `/images/...` when passed to Next's `Image` component.
 
-## Deploy on Vercel
+**Project map**
+- `pages/` — route files (home, about, projects, contact, address, email)
+- `components/` — shared UI components (Navbar, Footer, Layout, ProjectCard, ProfileHeader)
+- `styles/` — CSS Modules and global CSS
+- `public/images/` — static images and project previews
+- `data/projects.ts` — example project data displayed on the Projects page
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+If you want, I can also:
+- Add contact form handling (serverless function or third-party integration).
+- Wire up a CMS or Git-based content for projects.
+- Create a Vercel deployment and confirm the public URL.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+Built for a Software Developer portfolio — ready to run locally and deploy to Vercel.

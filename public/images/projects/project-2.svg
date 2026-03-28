@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="Task Management App project preview">
+  <rect width="1200" height="700" fill="#111827"/>
+  <rect x="60" y="70" width="1080" height="560" rx="24" fill="#1f2937"/>
+  <rect x="100" y="120" width="300" height="470" rx="16" fill="#0ea5e9"/>
+  <rect x="450" y="120" width="300" height="470" rx="16" fill="#8b5cf6"/>
+  <rect x="800" y="120" width="300" height="470" rx="16" fill="#f97316"/>
+</svg>
