@@ -14,7 +14,7 @@ export default function EmailPage() {
           send a message to:
         </p>
         <p className={styles.lead}>
-          <a href="mailto:dev.portfolio@example.com">dev.portfolio@example.com</a>
+          <a href="mailto:agbohosea51@yahoo.com">agbohosea51@yahoo.com</a>
         </p>
       </section>
     </Layout>

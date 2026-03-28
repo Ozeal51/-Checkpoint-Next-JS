@@ -3,34 +3,34 @@ import type { Project } from "@/components/ProjectCard";
 export const projects: Project[] = [
   {
     id: 1,
-    title: "E-Commerce Dashboard",
+    title: "E-Commerce Project",
     summary:
-      "Built an analytics dashboard for online stores with KPI tracking and order monitoring.",
+      "Built akpu4all platform for online food odering with KPI tracking and order monitoring.",
     tech: ["Next.js", "TypeScript", "PostgreSQL"],
-    image: "/images/projects/project-1.svg",
+    image: "public/images/projects/Akpu.jpeg",
   },
   {
     id: 2,
-    title: "Task Management App",
+    title: "ZipLaps App",
     summary:
       "Developed a productivity app with drag-and-drop kanban boards and team collaboration features.",
     tech: ["React", "Node.js", "MongoDB"],
-    image: "/images/projects/project-2.svg",
+    image: "public/images/projects/ZipLaps.png",
   },
   {
     id: 3,
-    title: "Real-Time Chat Platform",
+    title: "Real-Time Super Market",
     summary:
-      "Implemented a secure chat system with presence indicators and instant message synchronization.",
+      "Implemented a secure supper market site with presence indicators and instant synchronization.",
     tech: ["Next.js", "Socket.IO", "Redis"],
-    image: "/images/projects/project-3.svg",
+    image: "public/images/projects/deliz.jpeg",
   },
   {
     id: 4,
-    title: "Portfolio CMS",
+    title: "ZipLabs Incubator",
     summary:
-      "Created a headless CMS-backed portfolio manager for publishing projects and blog entries.",
+      "Created a Ziplab incubation for ziptech manager for publishing projects and blog entries.",
     tech: ["Next.js", "GraphQL", "Styled Components"],
-    image: "/images/projects/project-4.svg",
+    image: "public/images/projects/ziptube.png",
   },
 ];

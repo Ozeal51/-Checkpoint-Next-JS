@@ -13,7 +13,7 @@ export default function AddressPage() {
         <div className={styles.grid}>
           <article className={styles.item}>
             <h3>City</h3>
-            <p>Lagos</p>
+            <p>Abuja</p>
           </article>
           <article className={styles.item}>
             <h3>Country</h3>

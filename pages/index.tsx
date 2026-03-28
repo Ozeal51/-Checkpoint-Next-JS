@@ -8,7 +8,7 @@ import pageStyles from "@/styles/Page.module.css";
 export default function HomePage() {
   return (
     <Layout
-      title="Home | Software Developer Portfolio"
+      title="Home | Hosea Portfolio"
       description="Portfolio homepage showcasing software development skills and projects."
     >
       <ProfileHeader />

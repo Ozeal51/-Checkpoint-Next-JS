@@ -22,8 +22,8 @@ export default function ProfileHeader() {
   return (
     <section className={styles.hero}>
       <Image
-        src="/images/profile.svg"
-        alt="Profile picture of a software developer"
+        src="public/images/profil.jpeg"
+        alt="Profile picture of Hosea"
         width={180}
         height={180}
         className={styles.avatar}

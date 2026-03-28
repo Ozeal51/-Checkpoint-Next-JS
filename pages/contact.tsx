@@ -13,9 +13,9 @@ export default function ContactPage() {
           I&apos;m available for freelance, full-time, and collaboration opportunities.
         </p>
         <ul className={styles.list}>
-          <li>Email: dev.portfolio@example.com</li>
-          <li>Phone: +1 (555) 010-2435</li>
-          <li>Location: Lagos, Nigeria</li>
+          <li>Email: agbohosea51@yahoo.com</li>
+          <li>Phone: +234 7086101544</li>
+          <li>Location: Abuja, Nigeria</li>
         </ul>
       </section>
     </Layout>

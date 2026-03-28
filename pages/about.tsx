@@ -10,7 +10,7 @@ export default function AboutPage() {
       <section className={styles.section}>
         <h1 className={styles.heading}>About Me</h1>
         <p className={styles.lead}>
-          I am a software developer focused on building reliable, scalable, and
+          My Name is Hosea, I'm a software developer focused on building reliable, scalable, and
           user-friendly applications. I enjoy turning product ideas into
           maintainable systems and polished digital experiences.
         </p>
@@ -21,11 +21,11 @@ export default function AboutPage() {
           </article>
           <article className={styles.item}>
             <h3>Tech Stack</h3>
-            <p>Next.js, React, TypeScript, Node.js, SQL/NoSQL databases.</p>
+            <p>Next.js, Javascript, React, TypeScript, Node.js, NoSQL databases.</p>
           </article>
           <article className={styles.item}>
             <h3>Workflow</h3>
-            <p>Clean coding standards, code reviews, testing, and iterative delivery.</p>
+            <p>Clean coding standards,Git and Github, code reviews, testing, and iterative delivery.</p>
           </article>
         </div>
       </section>

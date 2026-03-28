@@ -18,10 +18,11 @@ export default function Navbar() {
     <header className={styles.header}>
       <div className={styles.container}>
         <Link href="/" className={styles.brand}>
-          Dev Portfolio
+          Hosea Portfolio
         </Link>
         <nav className={styles.nav} aria-label="Main navigation">
           {navLinks.map((link) => {
+            // Match current pathname to highlight the active page link.
             const isActive = router.pathname === link.href;
             return (
               <Link
