@@ -22,7 +22,7 @@ export default function ProfileHeader() {
   return (
     <section className={styles.hero}>
       <Image
-        src="public/images/profil.jpeg"
+        src="https://media.istockphoto.com/id/2241387601/photo/happy-african-american-web-developer-coding.jpg?s=612x612&w=0&k=20&c=ByW_0qE6gIpb4mHJ-ys9juViwo4CyFqMQ_KaUj-GZp8="
         alt="Profile picture of Hosea"
         width={180}
         height={180}
